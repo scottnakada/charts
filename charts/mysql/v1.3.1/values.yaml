@@ -19,9 +19,9 @@ testFramework:
 
 ## Create a database user
 ##
-# mysqlUser:
+mysqlUser: admin
 ## Default: random 10 character string
-# mysqlPassword:
+mysqlPassword: admin
 
 ## Allow unauthenticated access, uncomment to enable
 ##
@@ -29,7 +29,7 @@ testFramework:
 
 ## Create a database
 ##
-# mysqlDatabase:
+mysqlDatabase: admin
 
 ## Specify an imagePullPolicy (Required)
 ## It's recommended to change this to 'Always' if the image tag is 'latest'

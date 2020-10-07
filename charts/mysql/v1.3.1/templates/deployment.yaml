@@ -103,9 +103,9 @@ spec:
               optional: true
               {{- end }}
         - name: MYSQL_USER
-          value: {{ default "admin" .Values.mysqlUser | quote }}
+          value: {{ default "" .Values.mysqlUser | quote }}
         - name: MYSQL_DATABASE
-          value: {{ default "admin" .Values.mysqlDatabase | quote }}
+          value: {{ default "" .Values.mysqlDatabase | quote }}
         {{- if .Values.timezone }}
         - name: TZ
           value: {{ .Values.timezone }}
